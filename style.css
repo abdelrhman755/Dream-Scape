@@ -118,3 +118,33 @@ textarea::placeholder {
         transform:scale(1);
     }
 }
+
+.words {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.word {
+    position: absolute;
+    color:#c084fc; 
+    font-size: 2rem;
+    animation: floatup 5s linear forwards;
+    text-shadow:0 0 20px #9333ea;
+    font-weight:bold;
+}
+
+@keyframes floatup {
+    from{
+        transform: translatey(0);
+        opacity: 0;
+    }
+    to{
+        transform: translatey(-120vh);
+        opacity: 1;
+    }
+}
+
